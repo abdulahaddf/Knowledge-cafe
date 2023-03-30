@@ -11,7 +11,7 @@ const [rt, setRt] = useState(time);
     return (
         <div >
             <div className='card w-96 glass'>
-            <h3 className='text-2xl font-semibold my-6'>Read Time: {rt}</h3>
+            <h3 className='text-2xl font-semibold'>Read Time: {rt}</h3>
 
             </div>
         </div>

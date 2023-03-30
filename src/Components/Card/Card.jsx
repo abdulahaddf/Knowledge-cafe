@@ -38,7 +38,7 @@ const [time, setTime] = useState("");
                 <div className='h-14'>
                     <Time time={time}></Time>
                 </div>
-                <div className='h-36'>
+                <div className='h-36 mt-32'>
                     <Bookmark></Bookmark>
                 </div>
             </div>
