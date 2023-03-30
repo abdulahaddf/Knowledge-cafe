@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "author": "Abdul Ahad",
+      "title": "10 Tips for Writing Clean and Efficient Code",
+      "images": {
+        "cover": "./images/clean.jpg",
+        "author": "./user/1.jpg"
+      },
+      "read_time": "5",
+      "publish_date": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "author": "Tony Strac",
+      "title": "How to Master JavaScript Promises",
+      "images": {
+        "cover": "./images/master.jpg",
+        "author": "./user/2.jpg"
+      },
+      "read_time": "7",
+      "publish_date": "2022-02-14"
+    },
+    {
+      "id": 3,
+      "author": "Sakib Al Hasan",
+      "title": "Introduction to Machine Learning with Python",
+      "images": {
+        "cover": "./images/mcl.png",
+        "author": "./user/3.jpg"
+      },
+      "read_time": "10",
+      "publish_date": "2022-03-05"
+    },
+    {
+      "id": 4,
+      "author": "John Snow",
+      "title": "Best Practices for Developing Secure Web Applications",
+      "images": {
+        "cover": "./images/best.jpg",
+        "author": "./user/4.jpg"
+      },
+      "read_time": "8",
+      "publish_date": "2022-04-02"
+    }
+  ]
+  
