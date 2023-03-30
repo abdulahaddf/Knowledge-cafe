@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import Bookmark from '../Bookmark/Bookmark';
 import SingleCard from '../SingleCard/SingleCard';
 import Time from '../Time/Time';
 
@@ -33,12 +34,12 @@ const [time, setTime] = useState("");
                     (<SingleCard blog={blog} handleTime={handleTime} key={blog.id}></SingleCard>)   
                 )}
             </div>
-            <div>
+            <div className='flex flex-col h-3/4'>
                 <div className='h-14'>
                     <Time time={time}></Time>
                 </div>
-                <div>
-                    <h2>Bookmarked Blogs:</h2>
+                <div className='h-36'>
+                    <Bookmark></Bookmark>
                 </div>
             </div>
         </div>

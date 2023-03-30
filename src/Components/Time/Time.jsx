@@ -9,8 +9,11 @@ const [rt, setRt] = useState(time);
       }, [time]);
       
     return (
-        <div>
+        <div >
+            <div className='card w-96 glass'>
             <h3 className='text-2xl font-semibold my-6'>Read Time: {rt}</h3>
+
+            </div>
         </div>
     );
 };
