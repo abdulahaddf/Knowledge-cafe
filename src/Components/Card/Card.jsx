@@ -56,7 +56,7 @@ const [time, setTime] = useState("");
     
     return (
         <div className='flex flex-col md:flex-row md:justify-evenly '>
-            <div className='w-9/12' >
+            <div>
                 {blogs.map(blog => 
                     (<SingleCard blog={blog} handleTime={handleTime} handleBookmark={handleBookmark} key={blog.id}></SingleCard>)   
                 )}

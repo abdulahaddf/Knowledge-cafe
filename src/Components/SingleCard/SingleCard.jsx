@@ -14,13 +14,13 @@ const handleBookmark = props.handleBookmark;
 
   return (
     <>
-      <div className="card w-3/6 bg-base-100 shadow-xl my-3 p-1">
+      <div className="card max-w-lg bg-base-100 shadow-xl my-3 p-5">
         <div>
           <img className="w-200 rounded-xl" src={images.cover} alt="" />
         </div>
 
         <div>
-          <div className="flex justify-between">
+          <div className="flex justify-between p-3 my-2">
             <div className="flex w-48">
               <img className="w-10 rounded-full p-1" src={images.author} alt="" />
                  <div className="ms-3">
