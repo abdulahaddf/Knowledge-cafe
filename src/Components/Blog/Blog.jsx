@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div>
       
-      <div className="card glass grid grid-cols-1 md:grid-cols-2 gap-3 p-4">
+      <div className="card glass grid grid-cols-1 md:grid-cols-2 gap-3 p-4 mt-64 md:mt-3 w-96 mx-auto">
         <div className="card-body glass">
           <h2 className="card-title">1. Props vs state</h2>
           <div className="flex">

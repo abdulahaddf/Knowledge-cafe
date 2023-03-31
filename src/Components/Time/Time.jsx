@@ -10,8 +10,8 @@ const [rt, setRt] = useState(time);
       
     return (
         <div >
-            <div className='card w-96 glass my-3 p-5'>
-            <h3 className='text-2xl font-semibold'>Read Time: {rt}</h3>
+            <div className='card w-96 glass my-3 p-5 text-center mx-auto'>
+            <h3 className='text-2xl font-semibold '>Read Time: {rt}</h3>
 
             </div>
         </div>

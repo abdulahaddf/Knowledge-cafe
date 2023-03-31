@@ -15,7 +15,7 @@ const Bookmark = ({bookmark}) => {
 // }
 //     }),[bookmark])
     return (
-        <div className='card w-96 glass h-96 p-4 bg-gray-300'>
+        <div className='card w-96 glass h-96 md:h-96 p-4 bg-gray-300'>
             <h2 className='text-2xl font-semibold'>Bookmarked Blogs:</h2>
            
             {bookmark.map((title, index) => (
