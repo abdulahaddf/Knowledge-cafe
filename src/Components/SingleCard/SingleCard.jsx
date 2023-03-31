@@ -4,6 +4,7 @@ import { useEffect } from "react";
 const SingleCard = (props) => {
   const { images, title, read_time, author, publish_date } = props.blog;
 const handleTime = props.handleTime;
+const handleBookmark = props.handleBookmark;
 // const [time, setTime] = useState("");
 
 
@@ -13,7 +14,7 @@ const handleTime = props.handleTime;
 
   return (
     <>
-      <div className="card w-9/12 bg-base-100 shadow-xl my-3 p-1">
+      <div className="card w-3/6 bg-base-100 shadow-xl my-3 p-1">
         <div>
           <img className="w-200 rounded-xl" src={images.cover} alt="" />
         </div>
@@ -27,7 +28,7 @@ const handleTime = props.handleTime;
                    <p>{publish_date}</p>
                   </div>
             </div>
-            <div>{read_time} min read <button onClick={()=>handleTime(read_time)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <div>{read_time} min read <button onClick={()=>handleBookmark(title)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
 </svg>
 </button></div>
@@ -37,7 +38,7 @@ const handleTime = props.handleTime;
 
           <div className="text-left">
              <h3 className="text-2xl font-bold">{title}</h3>
-             <button className="btn btn-link p-0">Mark as read</button>
+             <button onClick={()=>handleTime(read_time)} className="btn btn-link p-0">Mark as read</button>
           </div>
 
 

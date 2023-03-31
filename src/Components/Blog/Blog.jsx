@@ -13,7 +13,7 @@ const Blog = () => {
                 <li>Props can be accessed by the child component.</li>
                 <li>Props are used to communicate between components.</li>
             </ol>
-            <ul>
+            <ul role="list">
                 <li>State changes can be asynchronous.</li>
                 <li>State is mutable.</li>
                 <li>State holds information about the components.</li>

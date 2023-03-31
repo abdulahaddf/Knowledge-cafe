@@ -3,6 +3,11 @@ import { useEffect } from 'react';
 import Bookmark from '../Bookmark/Bookmark';
 import SingleCard from '../SingleCard/SingleCard';
 import Time from '../Time/Time';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 const Card = () => {
     const [blogs, setBlog] = useState([]);
@@ -13,6 +18,7 @@ const Card = () => {
         )
     }),[]);
 
+    
 
 const [time, setTime] = useState("");
     
@@ -27,21 +33,62 @@ const [time, setTime] = useState("");
           setTime(readTime);
         }
       };
+      const [bookmark, setBookmark] = useState([]);
+      
+      const notify = () =>  {
+        
+        
+        toast('This blog is already bookmarked!');
+      };
+    
+      const handleBookmark =(title) => {
+        if  (bookmark.includes(title)) {
+            notify(); 
+           
+        }
+        else{
+            const bookmarks = [...bookmark, title]
+            setBookmark(bookmarks);
+            
+        }
+      
+      }
+    
     return (
-        <div className='flex justify-evenly'>
+        <div className='flex flex-col md:flex-row md:justify-evenly '>
             <div className='w-9/12' >
                 {blogs.map(blog => 
-                    (<SingleCard blog={blog} handleTime={handleTime} key={blog.id}></SingleCard>)   
+                    (<SingleCard blog={blog} handleTime={handleTime} handleBookmark={handleBookmark} key={blog.id}></SingleCard>)   
                 )}
             </div>
-            <div className='flex flex-col h-3/4'>
+            <div className='flex flex-col'>
                 <div className='h-14'>
                     <Time time={time}></Time>
                 </div>
                 <div className='h-36 mt-32'>
-                    <Bookmark></Bookmark>
-                </div>
+                    <Bookmark bookmark={bookmark}></Bookmark>
+                    <ToastContainer></ToastContainer>
+             </div>
+                
+
+
+
+               
+  
+
+ 
+    
+
+
+
+
+
+
+
+
+
             </div>
+            
         </div>
     );
 };
