@@ -9,7 +9,7 @@ const SingleCard = (props) => {
 
   return (
     <>
-      <div className="card max-w-lg bg-base-100 shadow-xl my-3 p-5">
+      <div className="card max-w-2xl bg-base-100 shadow-xl my-3 p-5">
         <div>
           <img className="w-200 rounded-xl" src={images.cover} alt="" />
         </div>
@@ -51,6 +51,7 @@ const SingleCard = (props) => {
 
         <div className="text-left">
           <h3 className="text-2xl font-bold">{title}</h3>
+          <p>#beginners  #programming</p>
           <button
             onClick={() => handleTime(read_time)}
             className="btn btn-link p-0"
